@@ -47,6 +47,14 @@ const Questionnaire: React.FC = () => {
     dispatch({ type: "CLEAR_STATE" });
   };
 
+  const isValidAnswer = (answer: any): boolean => {
+    if (Array.isArray(answer)) {
+      return answer.length > 0;
+    }
+    return answer !== undefined && answer !== null && answer !== "";
+  };
+  
+
   if (loading) {
     return <CircularProgress />;
   }
@@ -123,7 +131,7 @@ const Questionnaire: React.FC = () => {
                 disabled={
                   !state.questions
                     .filter((q) => q.mandatory)
-                    .every((q) => state.answers[q.id])
+                    .every((q) => isValidAnswer(state.answers[q.id]))
                 }
               >
                 Submit

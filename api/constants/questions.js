@@ -1,11 +1,16 @@
 const questions = [
   {
     id: 1,
-    question: "Which of the following is a React hook?",
+    question: "What is JSX?",
     type: "radio",
-    options: ["useFetch", "useState", "useAPI", "useEffect"],
+    options: [
+      "A syntax extension for JavaScript",
+      "A CSS preprocessor",
+      "A state management library",
+      "A JavaScript testing framework",
+    ],
     mandatory: true,
-    answer: "useState",
+    answer: "A syntax extension for JavaScript",
   },
   {
     id: 2,
@@ -22,10 +27,10 @@ const questions = [
   },
   {
     id: 3,
-    question: "What is the command to install React Router?",
+    question: "Fill the command to install React Router - npm instal _______?",
     type: "input",
     mandatory: false,
-    answer: "npm install react-router-dom",
+    answer: "react-router-dom",
   },
   {
     id: 4,
@@ -55,7 +60,7 @@ const questions = [
   {
     id: 7,
     question:
-      "What is the command to create a new React app my-app using Create React App?",
+      "What is the command to create a new React app named my-app using Create React App?",
     type: "input",
     mandatory: false,
     answer: "npx create-react-app my-app",
@@ -71,17 +76,16 @@ const questions = [
   },
   {
     id: 9,
-    question: "What is the purpose of useRef in React?",
+    question: "What is the purpose of the useState hook in React?",
     type: "radio",
     options: [
+      "To manage state in functional components",
       "To persist values between renders",
       "To access DOM elements directly",
-      "To manage state",
       "To handle side effects",
     ],
-    mandatory: false,
-    answer:
-      "To persist values between renders and access DOM elements directly",
+    mandatory: true,
+    answer: "To manage state in functional components",
   },
   {
     id: 10,

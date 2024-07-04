@@ -46,7 +46,7 @@ const Question: React.FC<QuestionProps> = ({ question }) => {
       return (
         <RadioGroup
           onChange={handleAnswerChange}
-          value={state.answers[question.id]}
+          value={state.answers[question.id] || ""}
         >
           {question.options.map((option: string, index: number) => (
             <FormControlLabel
@@ -69,7 +69,9 @@ const Question: React.FC<QuestionProps> = ({ question }) => {
               control={
                 <Checkbox
                   value={option}
-                  checked={state.answers[question.id]?.includes(option)}
+                  checked={
+                    state.answers[question.id]?.includes(option) || false
+                  }
                   onChange={($event) => handleAnswerChange($event, "checkbox")}
                   disabled={state.isSubmitted}
                 />
@@ -83,7 +85,7 @@ const Question: React.FC<QuestionProps> = ({ question }) => {
       return (
         <TextField
           onChange={handleAnswerChange}
-          value={state.answers[question.id]}
+          value={state.answers[question.id] || ""}
           disabled={state.isSubmitted}
         />
       );
@@ -92,7 +94,7 @@ const Question: React.FC<QuestionProps> = ({ question }) => {
         <TextField
           type="date"
           onChange={handleAnswerChange}
-          value={state.answers[question.id]}
+          value={state.answers[question.id] || ""}
           disabled={state.isSubmitted}
         />
       );
@@ -101,7 +103,7 @@ const Question: React.FC<QuestionProps> = ({ question }) => {
         <FormControl>
           <Select
             onChange={($event) => handleAnswerChange($event)}
-            value={state.answers[question.id]}
+            value={state.answers[question.id] || ""}
             disabled={state.isSubmitted}
           >
             {question.options.map((option: string, index: number) => (
