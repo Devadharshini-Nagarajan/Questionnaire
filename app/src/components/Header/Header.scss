@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    height: 55px;
+  }
+  
+  .logo {
+    max-width: 100%;
+    max-height: 50px;
+  }
+  
+  .nav-links {
+    display: flex;
+  }
+  
+  .nav-link {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
