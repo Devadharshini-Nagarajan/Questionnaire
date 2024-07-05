@@ -110,7 +110,7 @@ const Questionnaire: React.FC = () => {
             </Button>
             <Button
               variant="contained"
-              color="primary"
+              color="secondary"
               onClick={() =>
                 dispatch({
                   type: "SET_CURRENT_QUESTION_INDEX",
