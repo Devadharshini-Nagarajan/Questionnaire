@@ -14,6 +14,7 @@ The frontend is built using React with TypeScript, leveraging Material-UI for st
 - TypeScript
 - Material-UI
 - SCSS 
+- Jest
 
 ### Backend
 
@@ -63,6 +64,7 @@ The frontend application will be running on http://localhost:3000.
 
 ## Contents to add
 
+- More Unit Testing
 - Move reducer types to shared common file
 - Make interfaces common and use it everywhere (Eg: Question interface in Question props)
 - Accessibility
@@ -79,3 +81,4 @@ The frontend application will be running on http://localhost:3000.
 - chnage API folder structure
 - Follow - routes, controllers,  service
 - Integrate with SQL
+- move resilts welcome to questionairre status component maybe
