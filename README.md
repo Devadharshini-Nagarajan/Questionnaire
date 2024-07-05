@@ -6,6 +6,12 @@ The full-stack questionnaire application is designed to present users with a ser
 
 The frontend is built using React with TypeScript, leveraging Material-UI for styling and component design. The backend API is built with Node.js and Express, providing endpoints to fetch questions and submit answers
 
+<img width="1440" alt="image" src="https://github.com/Devadharshini-Nagarajan/Questionnaire/assets/113491692/dc497ec2-ddc1-4754-9bf6-06f6e3c843c5">
+
+
+<img width="1440" alt="image" src="https://github.com/Devadharshini-Nagarajan/Questionnaire/assets/113491692/81ca630a-b3a6-43ee-8026-22abff95fac6">
+
+
 ## Stack Used
 
 ### Frontend
@@ -64,7 +70,10 @@ The frontend application will be running on http://localhost:3000.
 
 ## Contents to add
 
+**Minor features**:
 - More Unit Testing
+- Send Success, Error messages from BE
+- Unit test for API
 - Move reducer types to shared common file
 - Make interfaces common and use it everywhere (Eg: Question interface in Question props)
 - Accessibility
@@ -73,17 +82,16 @@ The frontend application will be running on http://localhost:3000.
 - Button nav - diff color if its already filled
 - Check key from just index to reasonable
 - Main logo
-- Success, error messages from BE
 - Add tooltip for submit
 - Organize code a bit more
 - For inputs, can add more field validation
-- Uni test for API
-- chnage API folder structure
+- Move Score / Welcome content to new component
+- Chnage API folder structure
 - Follow - routes, controllers,  service
-- move Score / Welcome content to new component
 
-- Deploy in Netlify
-- Integrate with SQL
-- make Docker Image for deployment
+**Major features**:
+- Deploy in Netlify and Render (https://questionnaire-4wf8.onrender.com)
+- Make Docker Image for deployment
 - Cypress for E2E testing
+- Integrate with SQL
 
