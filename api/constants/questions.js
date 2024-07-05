@@ -27,7 +27,7 @@ const questions = [
   },
   {
     id: 3,
-    question: "Fill the command to install React Router - npm instal _______?",
+    question: "Fill the command to install React Router - npm install _______?",
     type: "input",
     mandatory: false,
     answer: "react-router-dom",
