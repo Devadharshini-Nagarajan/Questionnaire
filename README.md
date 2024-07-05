@@ -80,5 +80,10 @@ The frontend application will be running on http://localhost:3000.
 - Uni test for API
 - chnage API folder structure
 - Follow - routes, controllers,  service
-- Integrate with SQL
 - move Score / Welcome content to new component
+
+- Deploy in Netlify
+- Integrate with SQL
+- make Docker Image for deployment
+- Cypress for E2E testing
+
