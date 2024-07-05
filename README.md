@@ -81,4 +81,4 @@ The frontend application will be running on http://localhost:3000.
 - chnage API folder structure
 - Follow - routes, controllers,  service
 - Integrate with SQL
-- move resilts welcome to questionairre status component maybe
+- move Score / Welcome content to new component
