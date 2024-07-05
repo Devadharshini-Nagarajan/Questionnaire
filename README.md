@@ -8,10 +8,12 @@ The frontend is built using React with TypeScript, leveraging Material-UI for st
 
 
 
-<img width="1440" alt="image" src="https://github.com/Devadharshini-Nagarajan/Questionnaire/assets/113491692/dc497ec2-ddc1-4754-9bf6-06f6e3c843c5">
+<img width="1438" alt="image" src="https://github.com/Devadharshini-Nagarajan/Questionnaire/assets/113491692/7a075d5a-9791-4c01-899a-ed5b5b4c4d21">
 
 
-<img width="1440" alt="image" src="https://github.com/Devadharshini-Nagarajan/Questionnaire/assets/113491692/81ca630a-b3a6-43ee-8026-22abff95fac6">
+
+<img width="1438" alt="image" src="https://github.com/Devadharshini-Nagarajan/Questionnaire/assets/113491692/2ccabd22-b7a1-4253-b600-4cc6af2bafe2">
+
 
 
 ## Stack Used
