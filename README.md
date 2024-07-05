@@ -13,8 +13,7 @@ The frontend is built using React with TypeScript, leveraging Material-UI for st
 - React
 - TypeScript
 - Material-UI
-- SCSS
-- Jest
+- SCSS 
 
 ### Backend
 
@@ -76,3 +75,7 @@ The frontend application will be running on http://localhost:3000.
 - Add tooltip for submit
 - Organize code a bit more
 - For inputs, can add more field validation
+- Uni test for API
+- chnage API folder structure
+- Follow - routes, controllers,  service
+- Integrate with SQL
