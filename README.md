@@ -4,7 +4,9 @@
 
 The full-stack questionnaire application is designed to present users with a series of questions that they can answer. It supports multiple types of questions, including multiple-choice, checkboxes, radio buttons, text input, date selection, and dropdowns. Users can navigate through the questions, submit their answers, and see their scores and correct answers after submission.
 
-The frontend is built using React with TypeScript, leveraging Material-UI for styling and component design. The backend API is built with Node.js and Express, providing endpoints to fetch questions and submit answers
+The frontend is built using React with TypeScript, leveraging Material-UI for styling and component design and Jest for testing. The backend API is built with Node.js and Express, providing endpoints to fetch questions and submit answers. The application is fully responsive, ensuring a seamless experience across different devices.
+
+
 
 <img width="1440" alt="image" src="https://github.com/Devadharshini-Nagarajan/Questionnaire/assets/113491692/dc497ec2-ddc1-4754-9bf6-06f6e3c843c5">
 
