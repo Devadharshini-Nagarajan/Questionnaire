@@ -35,15 +35,15 @@ const Questionnaire: React.FC = () => {
 
   const handleSubmit = () => {
     const qWithEmail = state.questions.filter((q) => q.subType === "email");
-    let allChecked = true;
+    let emailCheckPass = true;
     Object.entries(state.answers).map(([key, value]) => {
       const question = qWithEmail.filter((el: any) => el.id == key);
       if (question && !validateEmail(value)) {
-        allChecked = false;
-        showNotification("Failed Validation", "error");
+        emailCheckPass = false;
       }
     });
-    if (!allChecked) {
+    if (!emailCheckPass) {
+      showNotification("Failed Validation", "error");
       return false;
     }
 
