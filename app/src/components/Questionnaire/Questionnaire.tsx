@@ -27,7 +27,26 @@ const Questionnaire: React.FC = () => {
       });
   }, [dispatch]);
 
+  const validateEmail = (email: any) => {
+    return email.match(
+      /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    );
+  };
+
   const handleSubmit = () => {
+    const qWithEmail = state.questions.filter((q) => q.subType === "email");
+    let allChecked = true;
+    Object.entries(state.answers).map(([key, value]) => {
+      const question = qWithEmail.filter((el: any) => el.id == key);
+      if (question && !validateEmail(value)) {
+        allChecked = false;
+        showNotification("Failed Validation", "error");
+      }
+    });
+    if (!allChecked) {
+      return false;
+    }
+
     setLoading(true);
     questionnaireService
       .postAnswers(state.answers)
@@ -53,7 +72,6 @@ const Questionnaire: React.FC = () => {
     }
     return answer !== undefined && answer !== null && answer !== "";
   };
-  
 
   if (loading) {
     return <CircularProgress />;

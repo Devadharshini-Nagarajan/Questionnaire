@@ -4,6 +4,7 @@ interface Question {
   id: number;
   question: string;
   type: string;
+  subType?:string;
   options?: string[];
   mandatory: boolean;
 }

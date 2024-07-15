@@ -25,7 +25,8 @@ const Question: React.FC<QuestionProps> = ({ question }) => {
 
   const handleAnswerChange = (
     event: React.ChangeEvent<any> | SelectChangeEvent<any>,
-    type?: string
+    type?: string,
+    subType?: string
   ) => {
     let value: any = event.target.value;
     if (type === "checkbox") {
@@ -84,9 +85,11 @@ const Question: React.FC<QuestionProps> = ({ question }) => {
     } else if (question.type === "input") {
       return (
         <TextField
-          onChange={handleAnswerChange}
+          type={question.subType ? question.subType : "input"}
+          onChange={($event) => handleAnswerChange($event, "input", "email")}
           value={state.answers[question.id] || ""}
           disabled={state.isSubmitted}
+          required={question.required}
         />
       );
     } else if (question.type === "date") {
