@@ -9,7 +9,7 @@ const questions = [
       "A state management library",
       "A JavaScript testing framework",
     ],
-    mandatory: true,
+    mandatory: false,
     answer: "A syntax extension for JavaScript",
   },
   {
@@ -22,7 +22,7 @@ const questions = [
       "useEffect",
       "shouldComponentUpdate",
     ],
-    mandatory: true,
+    mandatory: false,
     answer: ["componentDidMount", "render", "shouldComponentUpdate"],
   },
   {
@@ -62,7 +62,8 @@ const questions = [
     question:
       "What is the command to create a new React app named my-app using Create React App?",
     type: "input",
-    mandatory: false,
+    subType: "email",
+    mandatory: true,
     answer: "npx create-react-app my-app",
   },
   {
@@ -84,7 +85,7 @@ const questions = [
       "To access DOM elements directly",
       "To handle side effects",
     ],
-    mandatory: true,
+    mandatory: false,
     answer: "To manage state in functional components",
   },
   {
